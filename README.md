@@ -1,20 +1,10 @@
 # XYZ Bank - Playwright Automation
 
-Automated browser tests for the XYZ Bank demo app.
+Automation Playwright with Typescript for the XYZ Bank demo app.
 
-**Made by Bima Nathanael**
+[https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login) 
 
-## Description
-
-There is also one negative test: submitting an empty deposit amount should show the warning **Please fill out this field.** and should not change the balance.
-
-Page Object Model is used so locators and actions stay in page classes, not in the spec.
-
-The app is slow to load, so tests rely on Playwright auto-wait (`expect` / `toBeVisible`) instead of hard sleeps.
-
-## Application
-
-[https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login](https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login)
+**Made by Bima Nathanael**  
 
 ## How to install
 
@@ -37,7 +27,7 @@ Run tests with browser visible:
 npx playwright test --headed
 ```
 
-Open Playwright UI mode:
+Open Playwright UI mode (recommended):
 
 ```bash
 npx playwright test --ui
@@ -56,9 +46,9 @@ npx playwright show-report
 ## Test coverage
 
 
-| Test                                                  | What it checks                                                      |
-| ----------------------------------------------------- | ------------------------------------------------------------------- |
-| Verify $100 Credit transaction is shown after deposit | Happy path: login, deposit 100, assert a Credit row with amount 100 |
+| Test                                                  | What it checks                                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Verify $100 Credit transaction is shown after deposit | Happy path: login, deposit 100, assert a Credit row with amount 100                   |
 | Verify deposit is not processed when amount is empty  | Negative: empty amount shows "Please fill out this field." and balance stays the same |
 
 
