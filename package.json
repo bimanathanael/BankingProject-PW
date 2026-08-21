@@ -1,0 +1,30 @@
+{
+  "name": "bankingproject-pw",
+  "version": "1.0.0",
+  "description": "Playwright tests for XYZ Bank demo app",
+  "main": "index.js",
+  "author": "Bima Nathanael",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimanathanael/BankingProject-PW.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bimanathanael/BankingProject-PW/issues"
+  },
+  "homepage": "https://github.com/bimanathanael/BankingProject-PW#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  },
+  "dependencies": {
+    "typescript": "^7.0.2"
+  }
+}
